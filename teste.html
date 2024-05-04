@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de Programação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e1e1e; /* Tema escuro */
+            color: #f0f0f0; /* Texto claro */
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .menu {
+            width: 220px;
+            background-color: #333; /* Cor do menu */
+            padding: 20px;
+            position: fixed;
+            height: 100vh; /* Altura total da tela */
+            overflow-y: auto; /* Permite rolagem se necessário */
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+        }
+        .menu h2 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            color: #f9a825; /* Destaque para o título do menu */
+        }
+        .menu ul {
+            list-style: none; /* Sem marcadores */
+            padding: 0;
+        }
+        .menu ul li {
+            margin-bottom: 15px; /* Espaçamento entre itens */
+        }
+        .menu ul li a {
+            text-decoration: none; /* Sem sublinhado */
+            color: #f0f0f0; /* Cor do link */
+            padding: 10px 15px; /* Espaçamento interno */
+            display: flex; /* Flex layout para ícone e texto */
+            align-items: center; /* Centraliza ícone e texto */
+            border-radius: 5px; /* Cantos arredondados */
+            transition: background-color 0.3s; /* Transição suave */
+        }
+        .menu ul li a:hover {
+            background-color: #555; /* Cor do hover */
+        }
+        .menu ul li a i {
+            margin-right: 10px; /* Espaçamento entre ícone e texto */
+        }
+        .content {
+            margin-left: 240px; /* Espaço para o menu */
+            padding: 30px; /* Espaçamento interno */
+            flex-grow: 1; /* Permite que a área de conteúdo cresça */
+        }
+        .content h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #f9a825; /* Cor para os títulos */
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6; /* Melhor legibilidade */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h2>Curso de Programação</h2>
+            <ul>
+                <li><a href="#aula1"><i class="fas fa-play-circle"></i> Aula 1: Introdução</a></li>
+                <li><a href="#aula2"><i class="fas fa-code"></i> Aula 2: Variáveis</a></li>
+                <li><a href="#aula3"><i class="fas fa-random"></i> Aula 3: Estruturas de Controle</a></li>
+                <li><a href="#aula4"><i class="fas fa-cogs"></i> Aula 4: Funções</a></li>
+                <li><a href="#aula5"><i class="fas fa-cube"></i> Aula 5: Objetos e Classes</a></li>
+                <li><a href="#aula6"><i class="fas fa-tasks"></i> Aula 6: Prática Final</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 id="aula1">Aula 1: Introdução</h1>
+            <p>Bem-vindo à primeira aula! Aqui vamos aprender o básico da programação e como começar seu projeto.</p>
+            
+            <h1 id="aula2">Aula 2: Variáveis</h1>
+            <p>As variáveis permitem armazenar informações para uso em seu código. Vamos explorar diferentes tipos e como usá-las.</p>
+            
+            <h1 id="aula3">Aula 3: Estruturas de Controle</h1>
+            <p>As estruturas de controle, como if, else e loops, permitem que você controle o fluxo do seu programa.</p>
+            
+            <h1 id="aula4">Aula 4: Funções</h1>
+            <p>Funções ajudam a modularizar seu código, tornando-o mais organizado e reutilizável.</p>
+            
+            <h1 id="aula5">Aula 5: Objetos e Classes</h1>
+            <p>Objetos e classes são a base da Programação Orientada a Objetos (POO), facilitando a organização do código.</p>
+            
+            <h1 id="aula6">Aula 6: Prática Final</h1>
+            <p>Vamos usar tudo que aprendemos para construir um projeto prático.</p>
+        </div>
+    </div>
+</body>
+</html>

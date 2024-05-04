@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Online</title>
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fundo cinza claro */
+            color: #333; /* Cor do texto */
+        }
+
+        /* Barra de navegação */
+        .navbar {
+            background-color: white; /* Cor do fundo da barra */
+            color: white; /* Cor do texto */
+            padding: 20px 20px; /* Espaçamento interno */
+            display: flex; /* Usa flexbox para layout */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+        }
+
+        .navbar img {
+            position: absolute; /* Deixa a imagem fixa à esquerda */
+            left: 20px; /* Define o espaço à esquerda */
+        }
+
+        /* Adiciona margem entre os links para espaçamento */
+        .navbar a {
+            text-decoration: none; /* Remove sublinhado */
+            color: #000000; /* Cor do texto */
+            font-weight: bold;
+            margin-right: 15px; /* Espaçamento entre os links */
+        }
+
+        .navbar a:last-child {
+            margin-right: 0; /* Remove a margem do último elemento */
+        }
+
+        .navbar a:hover {
+            color: #ff5722; /* Cor de destaque ao passar o mouse */
+        }
+
+        /* Layout da página */
+        .main-content {
+            padding: 20px; /* Espaçamento interno */
+            display: grid; /* Usa grid para layout */
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+            gap: 20px; /* Espaçamento entre as colunas */
+        }
+
+        /* Seções de notícias */
+        .news-section {
+            background-color: white; /* Fundo branco */
+            border: 1px solid #ddd; /* Borda cinza clara */
+            border-radius: 5px; /* Cantos arredondados */
+            padding: 15px; /* Espaçamento interno */
+        }
+
+        .news-section a {
+            text-decoration: none; /* Remove sublinhado */
+            color: #000000; /* Cor do texto */
+            font-weight: bold;
+            margin-right: 15px; /* Espaçamento entre os links */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .news-section a:hover {
+            color: #ff5722;
+        }
+
+        .news-section h2 {
+            margin-top: 0; /* Remove margem superior */
+        }
+
+        .news-section p {
+            color: #666; /* Cor do texto mais clara */
+        }
+
+        /* Imagens dentro da seção de notícias */
+        .news-section img {
+            width: 100%; /* Imagem ocupa toda a largura */
+            height: auto; /* Mantém proporção */
+            border-radius: 5px; /* Cantos arredondados */
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-content {
+                grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="TABOMAGORA.png" alt="Logo do Site" width="100px" height="40px">
+      <p>Orminda</p>
+        <a href="index.html">Importante</a>
+        <a href="Escolar.html">Escolar</a>
+        <a href="Canal.html">Canal</a>
+    </div>
+
+    <div class="main-content">
+        <div class="news-section">
+            <img src="omasp.jpg" alt="Imagem de exemplo">
+            <h2>OMASP: 700 Mil Estudantes Paulistas Passam para a Segunda Fase</h2>
+            <p>Em uma das competições estudantis mais aguardadas do ano, 700 mil estudantes de São Paulo foram aprovados para a segunda fase da Olimpíada Matemática de São Paulo (OMASP)...</p>
+            <a href="omasp.html">Ver notícia</a>
+        </div>
+
+        <div class="news-section">
+            <img src="dataomasp.jpg" alt="Imagem de exemplo">
+            <h2>OMASP: Datas divulgadas!</h2>
+            <p>A organização da Olimpíada Matemática de São Paulo (OMASP) anunciou as datas para a segunda fase da competição. Os estudantes aprovados terão seus testes nos dias 6 até 9 do mês de Maio em locais por todo o estado de São Paulo...</p>
+        </div>
+
+        <div class="news-section">
+            <img src="cestadebasquete.png" alt="Imagem de exemplo">
+            <h2>ESCOLAR: A chapa Inovação Estudantil faz sua primeira proposta para a escola!</h2>
+            <p>Sábado, 27 de abril de 2024 a chapa Inovação Estudantil e faz uma reforma na quadra.</p>
+          <br>
+            <a href="reformanaquadra.html">Ver notícia</a>
+        </div>
+
+        <div class="news-section">
+            <img src="tiktok.png">
+            <h2>Governo de SP Restringe Acesso a TikTok, Instagram e Outros Apps Não Educativos em Escolas Estaduais</h2>
+            <p>De acordo com a Secretaria da Educação, a medida visa otimizar o uso da infraestrutura tecnológica...</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <a href="tiktokproibido.html">Ver notícia</a>
+        </div>
+
+      <div class="news-section">
+          <img src="futsalkk.png">
+          <h2>JOGOS ESCOLARES DO ESTADO DE SP: Orminda Guimarães Cotrim vence Isaías por 4-0.</h2>
+          <p>No campeonato INTERESCOLAR, a equipe do colégio Orminda Guimarães Cotrim obteve uma vitória impressionante contra o time de...</p>
+        <br>
+        <br>
+        <br>
+        <a href="4a0.html">Ver notícia</a>
+      </div>
+
+      <div class="news-section">
+          <img src="voleikk.jpg">
+          <h2>JOGOS ESCOLARES DO ESTADO DE SP: Orminda Vence por 2-1 no Vôlei contra Maurício Montecchi</h2>
+          <p>Em um jogo emocionante e repleto de reviravoltas, a Escola Estadual Orminda Guimarães Cotrim conquistou uma vitória emocionante contra a...</p>
+        <a href="2a1.html">Ver notícia</a>
+      </div>
+      
+        <div class="news-section">
+          <img src="campanha.png">
+          <h2>ESCOLAR: A Chapa Inovação Estudantil faz campanha com a Instituição Maria Gianni Andrade</h2>
+          <p>A Chapa Inovação Estudantil começou uma campanha com a Instituição Maria Gianni Andrade, com...</p>
+        <a href="campanha.html">Ver notícia</a>
+      </div>
+
+        <div class="news-section">
+          <img src="template">
+          <h2>NonTitle</h2>
+          <p>NonDescription</p>
+        <a href="nada">Ver notícia</a>
+      </div>
+    </div>
+</body>
+</html>

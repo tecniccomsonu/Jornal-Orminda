@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Online</title>
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f; /* Fundo cinza claro */
+            color: #FFF; /* Cor do texto */
+        }
+
+        /* Barra de navegação */
+        .navbar {
+            background-color: white; /* Cor do fundo da barra */
+            color: white; /* Cor do texto */
+            padding: 20px 20px; /* Espaçamento interno */
+            display: flex; /* Usa flexbox para layout */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+        }
+
+        .navbar img {
+            position: absolute; /* Deixa a imagem fixa à esquerda */
+            left: 20px; /* Define o espaço à esquerda */
+        }
+
+        /* Adiciona margem entre os links para espaçamento */
+        }
+
+        /* Layout da página */
+        .main-content {
+            padding: 20px; /* Espaçamento interno */
+            display: grid; /* Usa grid para layout */
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+            gap: 20px; /* Espaçamento entre as colunas */
+        }
+
+        /* Seções de notícias */
+        .news-section {
+            background-color: white; /* Fundo branco */
+            border: 1px solid #ddd; /* Borda cinza clara */
+            border-radius: 5px; /* Cantos arredondados */
+            padding: 15px; /* Espaçamento interno */
+        }
+
+        .news-section a {
+            text-decoration: none; /* Remove sublinhado */
+            color: #000000; /* Cor do texto */
+            font-weight: bold;
+            margin-right: 15px; /* Espaçamento entre os links */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .news-section a:hover {
+            color: #ff5722;
+        }
+
+        .news-section h2 {
+            margin-top: 0; /* Remove margem superior */
+        }
+
+        .news-section p {
+            color: #666; /* Cor do texto mais clara */
+        }
+
+        /* Imagens dentro da seção de notícias */
+        .news-section img {
+            width: 100%; /* Imagem ocupa toda a largura */
+            height: auto; /* Mantém proporção */
+            border-radius: 5px; /* Cantos arredondados */
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-content {
+                grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+      <div class="news-section">
+            <h2>VÍDEO: Prova Paulista</h2>
+            <p>Assista ao vídeo abaixo:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U9p23qke4OA?si=9c2DFa4FospsTRyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</body>
+</html>
