@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragédia no Rio Grande do Sul: 75 Mortes confirmadas e mais de 100 Desaparecimentos | J0 </title>
+    <link rel="icon" href="j1.png" type="image/png">
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+            text-align: center;
+            color: #333;
+        }
+
+        body p {
+            color: #666;
+        }
+
+        /* Barra de navegação */
+        .navbar {
+            background-color: #C3170C;
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .navbar img {
+            position: absolute;
+            left: 40px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .navbar h1 {
+            margem: 0;
+            color: #FFF;
+            font-size: 1.5rem;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margem-right: 10px;
+        }
+
+        .navbar a:last-child {
+            margem-right: 0;
+        }
+
+        .navbar a:hover {
+            color: #ff5722;
+        }
+
+        /* Layout da página */
+        .main-content {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Seções de notícias */
+        .news-section {
+            background-color: white;
+            border: 1px sólido #ddd;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .news-section a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .news-section a:hover {
+            color: #ff5722;
+        }
+
+        /* Estilo para botões de compartilhamento */
+        .share-buttons {
+            margem: 10px 0;
+        }
+
+        .share-button {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            border: none; /* Remove qualquer borda */
+            line-height: 1; /* Ajusta a altura da linha para evitar expansões indesejadas */
+            font-size: 16px; /* Define um tamanho de fonte consistente */
+        }
+
+        .share-button:last-child {
+            margem-right: 0;
+        }
+
+        .news {
+            padding: 20px 20px;
+            background-color: #F2F2F2;
+            text-align: center;
+        }
+
+        .share-button.whatsapp {
+            background-color: #3F4145;
+            font-size: 16px;
+            border: 3px;
+        }
+
+        .inicio-noticia p {
+           color: #666;
+           font-size: 16px;
+        }
+
+        .noticia p {
+           color: #666;
+           font-size: 16px;
+        }
+
+        .noticia ur {
+            color: #C3170C;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .noticia a {
+            color: #C3170C;
+            background-color: white;
+            font-size: 16px;
+            border: 3px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .noticia img {
+            border-radius: 15px;
+        }
+
+        .noticia t {
+            color: #0D0D0D;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .noticia footer {
+            font-size: 10px;
+        }
+
+    </style>
+    <script>
+        function shareOnWhatsApp() {
+            var currentURL = encodeURIComponent(window.location.href); // Codifica a URL atual
+            var message = encodeURIComponent("Você já pode ver a nova notícia do Jornal Orminda no link: "); // Mensagem personalizada
+            var whatsappLink = `https://api.whatsapp.com/send?text=${message}${currentURL}`; // Monta o link para o WhatsApp
+
+            window.open(whatsappLink, '_blank'); // Abre o link em uma nova aba/janela
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="j1.png" alt="Logo do Site">
+        <h1>RIO GRANDE DO SUL</h1>
+    </div>
+
+    <h1>Tragédia no Rio Grande do Sul: 75 Mortes confirmadas e mais de 100 Desaparecimentos</h1>
+    <p>O Rio Grande do Sul(RS) soma 107 mil pessoas desabrigadas e 334 municípios afetados pela enchente.</p>
+    <br>
+
+    <div class="share-buttons">
+        <button onclick="shareOnWhatsApp()" class="share-button whatsapp">Compartilhar</button>
+    </div>
+    <br>
+    <br>
+    </div>
+    <div class="noticia">
+        <br>
+        <br>
+        <img src="tragédia.png" alt="Tragédia">
+        <footer>Uma imagem capturada por drone em 3 de maio de 2024 mostra uma pilha de carros soterrados por uma enchente na cidade de Encanto, no Rio Grande do Sul, depois de fortes chuvas que atingiram a região.</footer>
+        <br>
+        <br>
+        <p><ur>A Defesa Civil do Rio Grande do Sul</ur> afirma que <ur>75 mortes</ur> foram confirmadas em razão dos temporais que atingem o estado, conforme boletim divulgado às <ur>12h deste domingo (5).</ur> Outros <ur>seis óbitos</ur> já confirmados estão sendo investigados, para verificar se têm relação com a tragédia. (Veja a lista abaixo).</p>
+        <br>
+        <a href="https://chat.whatsapp.com/KtmfvHDOzIk4fYjzN8lWfj">📱Acesse o canal do j0 no seu WhatsApp!</a>
+        <br>
+        <p>Além dos <ur>mortos</ur>, <ur>há 103 desaparecidos</ur> e <ur>155 pessoas feridas</ur>. A Defesa Civil informa que há <ur>107 mil</ur> pessoas <ur>fora de casa,</ur> sendo <ur>16 mil</ur> em abrigos e <ur>88 mil</ur> desalojadas que estão <ur>abrigadas nas casas de familiares ou amigos.</ur> Ao todo, <ur>334</ur> dos <ur>496</ur> municípios do estado registraram algum tipo de problema, afetando um total de <ur>780 mil pessoas.</ur></p>
+        <br>
+        <h4>Mortes confirmadas (75):</h4>
+        <li><ur>Bento Gonçalves (3)</ur></li>
+        <li><ur>Boa Vista do Sul (2)</ur></li>
+        <li><ur>Bom Princípio (1)</ur></li>
+        <li><ur>Canela (2)</ur></li>
+        <li><ur>Canoas (1)</ur></li>
+        <li><ur>Capitão (1)</ur></li>
+        <li><ur>Caxias do Sul (5)</ur></li>
+        <li><ur>Cruzeiro do Sul (4)</ur></li>
+        <li><ur>Encantado (2)</ur></li>
+        <li><ur>Farroupilha (1)</ur></li>
+        <li><ur>Forquetinha (2)</ur></li>
+        <li><ur>Gramado (7)</ur></li>
+        <li><ur>Itaara (1)</ur></li>
+        <li><ur>Lajeado (5)</ur></li>
+        <li><ur>Montenegro (1)</ur></li>
+        <li><ur>Pantano Grande (1)</ur></li>
+        <li><ur>Paverama (2)</ur></li>
+        <li><ur>Pinhal Grande (1)</ur></li>
+        <li><ur>Putinga (1)</ur></li>
+        <li><ur>Roca Sales (2)</ur></li>
+        <li><ur>Salvador do Sul (2)</ur></li>
+        <li><ur>Santa Cruz do Sul (2)</ur></li>
+        <li><ur>Santa Maria (5)</ur></li>
+        <li><ur>São João do Polêsine (1)</ur></li>
+        <li><ur>São Vendelino (2)</ur></li>
+        <li><ur>Segredo (1)</ur></li>
+        <li><ur>Serafina Corrêa (2)</ur></li>
+        <li><ur>Silveira Martins (1)</ur></li>
+        <li><ur>Sinimbu (1)</ur></li>
+        <li><ur>Taquara (2)</ur></li>
+        <li><ur>Três Coroas (1)</ur></li>
+        <li><ur>Vale do Sol (1)</ur></li>
+        <li><ur>Venâncio Aires (3)</ur></li>
+        <li><ur>Vera Cruz (1)</ur></li>
+        <li><ur>Veranópolis (5)</ur></li>
+        <br>
+        <p>Em <ur>Porto Alegre,</ur> o nível do <ur>Guaíba</ur> ultrapassou os <ur>5 metros,</ur> transbordando nas <ur>ruas e avenidas.</ur></p>
+        <a href="index.html">Retornar</a>
+        <br>
+        <br>
+        <br>
+        <footer>© Jornal Orminda 2024</footer>
+    </div>
+</body>
+</html>
